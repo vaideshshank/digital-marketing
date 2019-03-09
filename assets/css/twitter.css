@@ -29,8 +29,8 @@
         width:80vw;
     }
 
-    body #section1>div:nth-child(2){width: 95vw;}
-    body #section1>div:nth-child(1){width:80vw;padding-left: 50px;}
+    body #section1>div:nth-child(2){width: 100vw;}
+    body #section1>div:nth-child(1){width:88vw;padding-left: 50px;}
     body #section1>div:nth-child(2) .twitterAssetsImg{
         display: block;
         margin:0 auto;
