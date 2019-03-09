@@ -31,7 +31,7 @@
     }
 
     body #section1>div:nth-child(2){width: 96vw;}
-    body #section1>div:nth-child(1){width:86vw;padding-left: 50px;}
+    body #section1>div:nth-child(1){width:88vw;padding-left: 50px;}
     body #section1>div:nth-child(2) .googleAssetsImg{
         display: block;
         margin:0 auto;
