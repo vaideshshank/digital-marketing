@@ -23,11 +23,47 @@
     src:url('../fonts/Poppins-Medium.otf') format('opentype');
 }
 
+
+/*Mobile View*/
+@media screen and (max-width:750px){
+    body #section1{
+        flex-direction: column-reverse;
+    }
+
+    body #section1>div:nth-child(2){width: 100vw;}
+    body #section1>div:nth-child(1){width:93vw;padding-left: 30px;}
+    body #section1>div:nth-child(2) .instaAssetsImg{
+        display: block;
+        margin:0 auto;
+        margin-top:50px;
+        margin-bottom: 50px;
+        width:80vw;
+    }
+
+    body #section1>div:nth-child(1) .instaAdsImg{
+        width:60vw;
+    }
+
+    body #section1>div:nth-child(1)>ul{
+        font-size: 4vw;
+        width:90%;
+    }
+
+    body #section1>div:nth-child(2) .instaAssetsImg{
+        width:80vw;
+    }
+
+    body #section1>div:nth-child(1)>span{
+        font-size:4vw;
+    }
+    
+}
+
+
 body{margin:0; padding: 0;}
 
 #section1{
-    display: grid;
-    grid-template-columns: 50% auto;
+    display:flex;
 }
 
 #section1>div:nth-child(1){
