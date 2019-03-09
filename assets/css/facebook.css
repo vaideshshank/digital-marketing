@@ -23,6 +23,15 @@
     src:url('../fonts/Poppins-Medium.otf') format('opentype');
 }
 
+/*Mobile View*/
+@media screen and (max-width:750px){
+    body #section1{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-row-start:-1;
+    }
+}
+
 body{margin:0; padding: 0;}
 
 #section1{
