@@ -23,6 +23,12 @@
     src:url('../fonts/Poppins-Medium.otf') format('opentype');
 }
 
+#navigation>i{
+    color:white;
+    font-size:18px;
+    display: none;
+}
+
 
 ::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -109,14 +115,16 @@ body{
 #section1 .banner>img:nth-child(1){
     width:100px;
     position: relative;
-    left:-17.5vw;
+    /*left:-17.5vw;*/
+    left:-240px;
     top:10px;
 }
 #section1 .banner>img:nth-child(5){
     width:180px;
     position: relative;
-    left:21vw;
-    top:-92px;
+    /*left:21vw;*/
+    left:240px;
+    top:-85px;
 }
 
 #section1 .banner>span:nth-child(2){
@@ -151,6 +159,7 @@ body{
     width:80vw;
     margin:0 auto;
     font-family:Poppins-Regular;
+    flex-wrap: wrap;
 }
 
 #section1 .show .flex1>div>span{
@@ -190,7 +199,6 @@ body{
 #section1 .show .flex2{
     display: flex;
     justify-content: center;
-    width:70vw;
     margin:0 auto;
 }
 
@@ -198,7 +206,7 @@ body{
     margin-left:15px;
     margin-right:15px;
     height:271px;
-    width:169px;
+    min-width:169px;
     background: #202c36a4;
     filter: opacity(0.5);
     border-radius: 15px;
@@ -281,7 +289,7 @@ body{
 }
 
 #section3 .flex4>div{
-    width:12.5vw;
+    width:156px;
     text-align: center;
     margin-left: 54px;
     margin-right: 54px;
