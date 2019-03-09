@@ -31,7 +31,7 @@
 }
 
 ::-webkit-scrollbar{
-	width: 8px;
+    width: 8px;
 	background-color: rgba(85, 85, 85, 0.295);
 }
 
@@ -61,12 +61,29 @@ body{
     font-family: Poppins-Light;
     color:rgba(255, 255, 255, 0.5);
     font-size: 16px;
-    margin-right:40px;
     float: right;
+}
+
+#navigation>span:nth-child(2){
+    display: flex;
+    margin-right: 134px;
+}
+
+#navigation>span:nth-child(2)>span{
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+
+
+#navigation>span:nth-child(2)>span:hover{
+    color:white;
+    cursor:pointer;
 }
 
 #navigation>span:nth-child(1){
     float: left;
+    margin-left: 135px;
 }
 
 #dots1{
@@ -182,10 +199,38 @@ body{
     margin-right:15px;
     height:271px;
     width:169px;
-    background: #202c36;
+    background: #202c36a4;
     filter: opacity(0.5);
     border-radius: 15px;
+    text-align: center;
+    font-family:Poppins-Regular;
 }
+
+#section1 .show .flex2>div>span:nth-child(1){
+    display: block;
+    font-size:20px; 
+    color:rgba(255, 255, 255, 0.5);
+    margin-top:32px;
+}
+
+#section1 .show .flex2>div>span:nth-child(2){
+    font-size:12px;
+    display: block;
+    color:rgba(255, 255, 255, 0.3);
+}
+
+#section1 .show .flex2>div>div{
+    height:157px;
+    margin-top:32px;
+    border-radius: 0 0 15px 15px;
+    background: linear-gradient(to bottom,#848a8fa4,#202c36a4);
+}
+
+#section1 .show .flex2>div>div:hover{
+    background: linear-gradient(to bottom,#23e5a3,#202c36a4);
+}
+
+
 
 #section2{
     background: #121212;
@@ -292,10 +337,14 @@ body{
     padding-left:200px;
 }   
 
+#section3 .flex5::-webkit-scrollbar{
+    display:none;
+}
+
 #section3 .flex5>div{
     display: flex;
     min-width:370px;
-    background:#d8d8d82a;
+    background:#d8d8d841;
     color:white;
     font-family: Poppins-Medium;
     font-size: 16px;    
@@ -305,15 +354,16 @@ body{
     padding-left: 20px;
     align-items: center;  
 }
-#section3 .arrows{margin-left: 205px;margin-top: 10px;}
+#section3 .arrows{margin-left: 205px;margin-top: 30px;}
 #section3 .arrows>i{
     font-size: 29px;
     color:black;
-    background-color:#d8d8d82a;
+    background-color:#d8d8d857;
     padding:10px;
-    height:29px;
-    border-radius: 50%;
+    height:25px;
+    line-height: 25px;
     margin-right: 40px;
+    border-radius: 50%;
 }
 
 #section3 .arrows>i:hover{cursor: pointer;}
