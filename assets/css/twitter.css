@@ -61,14 +61,14 @@ body{margin:0; padding: 0;}
 }
 
 #twitter-section1>div:nth-child(1){
-    width:45vw;
+    width:40vw;
     background: #2baef2;
     padding-left: 135px;
 }
 
 #twitter-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 1.4vw;
     color:white;
     margin-top:15px;
     margin-left: -20px;
@@ -82,7 +82,7 @@ body{margin:0; padding: 0;}
 #twitter-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 20px;
+    font-size: 1.7vw;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
     margin-top: 80px;
@@ -98,7 +98,7 @@ body{margin:0; padding: 0;}
 
 #twitter-section1>div:nth-child(2){
     background: #003b5c;
-    width:55vw;
+    width:50vw;
 }
 
 #twitter-section1>div:nth-child(2) .twitterAssetsImg{

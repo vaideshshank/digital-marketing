@@ -25,13 +25,13 @@
 
 /*Mobile View*/
 @media screen and (max-width:750px){
-    body #section1{
+    body #youtube-section1{
         flex-direction: column-reverse;
     }
 
-    body #section1>div:nth-child(2){width: 100vw;}
-    body #section1>div:nth-child(1){width:87vw;padding-left: 50px;}
-    body #section1>div:nth-child(2) .ytAssetsImg{
+    body #youtube-section1>div:nth-child(2){width: 100vw;}
+    body #youtube-section1>div:nth-child(1){width:87vw;padding-left: 50px;}
+    body #youtube-section1>div:nth-child(2) .ytAssetsImg{
         display: block;
         margin:0 auto;
         margin-top:100px;
@@ -39,20 +39,20 @@
         width:80vw;
     }
 
-    body #section1>div:nth-child(1) .fbAdsImg{
+    body #youtube-section1>div:nth-child(1) .fbAdsImg{
         width:60vw;
     }
 
-    body #section1>div:nth-child(1)>div>iframe{
+    body #youtube-section1>div:nth-child(1)>div>iframe{
         width:78vw;
     }
 
-    body #section1>div:nth-child(1)>ul{
+    body #youtube-section1>div:nth-child(1)>ul{
         font-size: 4vw;
         width:90%;
     }
 
-    body #section1>div:nth-child(1)>span{
+    body #youtube-section1>div:nth-child(1)>span{
         font-size:4vw;
     }
     
@@ -60,48 +60,51 @@
 
 body{margin:0; padding: 0;}
 
-#section1{
+#youtube-section1{
     display: flex;
 }
 
-#section1>div:nth-child(1){
+#youtube-section1>div:nth-child(1){
     background: #282828;
     padding-left: 135px;
+    width:40vw
 }
 
-#section1>div:nth-child(1)>ul{
+#youtube-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 1.4vw;
     color:white;
     margin-top:15px;
     margin-left: -20px;
     padding-right: 33px;
 }
 
-#section1>div:nth-child(1)>ul>li{
+#youtube-section1>div:nth-child(1)>ul>li{
     margin-bottom: 20px;
 }
 
-#section1>div:nth-child(1)>span{
+#youtube-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 20px;
+    font-size: 1.7vw;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
     margin-top: 80px;
     margin-bottom: 30px;
 }
 
-#section1>div:nth-child(1) .ytImg{
+#youtube-section1>div:nth-child(1) .ytImg{
     width:98px;  
     margin-top:153px;
     margin-bottom: 40px;
 }
 
 
-#section1>div:nth-child(2) .ytAssetsImg{
-    width:472px;
+#youtube-section1>div:nth-child(2) .ytAssetsImg{
+    width:480px;
     display: block;
     margin: 0 auto;
     margin-top: 246px;
+    padding-left:60px;
+    padding-right:60px;
 }

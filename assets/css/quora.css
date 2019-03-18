@@ -68,11 +68,12 @@ body{margin:0; padding: 0;}
 #quora-section1>div:nth-child(1){
     background: #b61317;
     padding-left: 135px;
+    width:40vw;
 }
 
 #quora-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 1.4vw;
     color:white;
     margin-top:15px;
     margin-left: -20px;
@@ -86,7 +87,7 @@ body{margin:0; padding: 0;}
 #quora-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 20px;
+    font-size: 1.8vw;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
     margin-top: 80px;
@@ -97,13 +98,13 @@ body{margin:0; padding: 0;}
     display: block;
     font-family: Poppins-Medium;
     color:white;
-    font-size: 16px;
+    font-size: 1.2vw;
     padding-left:20px;
     padding-right: 20px;
     padding-top:18px;
     padding-bottom:18px;
     background: #6814149a;
-    width: 370px;
+    width: 30vw;
     margin-bottom: 10px;
     border-radius: 5px;
 }
@@ -120,4 +121,6 @@ body{margin:0; padding: 0;}
     display: block;
     margin: 0 auto;
     margin-top: 296px;
+    padding-left:10px;
+    padding-rightt:10px;
 }
