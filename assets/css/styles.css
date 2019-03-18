@@ -26,7 +26,8 @@
 #navigation>i{
     color:white;
     font-size:18px;
-    display: none;
+    display: block;
+    display :none;
 }
 
 
@@ -90,6 +91,21 @@ body{
 #navigation>span:nth-child(1){
     float: left;
     margin-left: 135px;
+}
+
+#navigation .mobile-menu{
+    display: none;
+    padding-left:4vw;
+    padding-top:10vh;
+    font-family:Poppins-Regular;
+}
+
+#navigation .mobile-menu>span{
+    display: block;
+    font-size:4.5vw;
+    color:#ffffffab;
+    margin:4vh;
+    cursor:pointer;
 }
 
 #dots1{
@@ -288,6 +304,19 @@ body{
     margin-bottom: 100px;
 }
 
+#section3 .iframes{
+    margin-top:170px;
+    display:flex;
+    width:100%;;
+    overflow-y:scroll;
+}
+
+/*#section3 .iframes>section{
+    position: relative;
+    height:500px;
+    width:98%;
+}
+*/
 #section3 .flex4>div{
     width:156px;
     text-align: center;

@@ -26,13 +26,13 @@
 
 /*Mobile View*/
 @media screen and (max-width:750px){
-    body #section1{
+    body #insta-section1{
         flex-direction: column-reverse;
     }
 
-    body #section1>div:nth-child(2){width: 100vw;}
-    body #section1>div:nth-child(1){width:93vw;padding-left: 30px;}
-    body #section1>div:nth-child(2) .instaAssetsImg{
+    body #insta-section1>div:nth-child(2){width: 100vw;}
+    body #insta-section1>div:nth-child(1){width:93vw;padding-left: 30px;}
+    body #insta-section1>div:nth-child(2) .instaAssetsImg{
         display: block;
         margin:0 auto;
         margin-top:50px;
@@ -40,20 +40,20 @@
         width:80vw;
     }
 
-    body #section1>div:nth-child(1) .instaAdsImg{
+    body #insta-section1>div:nth-child(1) .instaAdsImg{
         width:60vw;
     }
 
-    body #section1>div:nth-child(1)>ul{
+    body #insta-section1>div:nth-child(1)>ul{
         font-size: 4vw;
         width:90%;
     }
 
-    body #section1>div:nth-child(2) .instaAssetsImg{
+    body #insta-section1>div:nth-child(2) .instaAssetsImg{
         width:80vw;
     }
 
-    body #section1>div:nth-child(1)>span{
+    body #insta-section1>div:nth-child(1)>span{
         font-size:4vw;
     }
     
@@ -62,32 +62,33 @@
 
 body{margin:0; padding: 0;}
 
-#section1{
+#insta-section1{
     display:flex;
 }
 
-#section1>div:nth-child(1){
+#insta-section1>div:nth-child(1){
     background: #e90077;
     padding-left: 135px;
+    width:43vw;
 }
 
-#section1>div:nth-child(1)>ul{
+#insta-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 1.3vw;
     color:white;
     margin-top:15px;
     margin-left: -20px;
     padding-right: 33px;
 }
 
-#section1>div:nth-child(1)>ul>li{
+#insta-section1>div:nth-child(1)>ul>li{
     margin-bottom: 20px;
 }
 
-#section1>div:nth-child(1)>span{
+#insta-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 20px;
+    font-size: 1.5vw;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
     margin-top: 80px;
@@ -95,16 +96,17 @@ body{margin:0; padding: 0;}
 }
 
 
-#section1>div:nth-child(1) .instaImg{
+#insta-section1>div:nth-child(1) .instaImg{
     width:288px;  
     margin-top:160px;
     margin-bottom: 48px;
 }
 
 
-#section1>div:nth-child(2) .instaAssetsImg{
-    width:570px;
+#insta-section1>div:nth-child(2) .instaAssetsImg{
+    width:600px;
     display: block;
     margin: 0 auto;
+    padding:20px;
     margin-top: 200px;
 }

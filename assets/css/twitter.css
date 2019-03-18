@@ -24,14 +24,14 @@
 }
 
 @media screen and (max-width:750px){
-    body #section1{
+    body #twitter-section1{
         flex-direction: column-reverse;
         width:80vw;
     }
 
-    body #section1>div:nth-child(2){width: 100vw;}
-    body #section1>div:nth-child(1){width:88vw;padding-left: 50px;}
-    body #section1>div:nth-child(2) .twitterAssetsImg{
+    body #twitter-section1>div:nth-child(2){width: 100vw;}
+    body #twitter-section1>div:nth-child(1){width:88vw;padding-left: 50px;}
+    body #twitter-section1>div:nth-child(2) .twitterAssetsImg{
         display: block;
         margin:0 auto;
         margin-top:100px;
@@ -39,16 +39,16 @@
         width:80vw;
     }
 
-    body #section1>div:nth-child(1) .twitterAdsImg{
+    body #twitter-section1>div:nth-child(1) .twitterAdsImg{
         width:60vw;
     }
 
-    body #section1>div:nth-child(1)>ul{
+    body #twitter-section1>div:nth-child(1)>ul{
         font-size: 4vw;
         width:90%;
     }
 
-    body #section1>div:nth-child(1)>span{
+    body #twitter-section1>div:nth-child(1)>span{
         font-size:4vw;
     }
     
@@ -56,17 +56,17 @@
 
 body{margin:0; padding: 0;}
 
-#section1{
+#twitter-section1{
     display: flex;
 }
 
-#section1>div:nth-child(1){
+#twitter-section1>div:nth-child(1){
     width:45vw;
     background: #2baef2;
     padding-left: 135px;
 }
 
-#section1>div:nth-child(1)>ul{
+#twitter-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
     font-size: 18px;
     color:white;
@@ -75,11 +75,11 @@ body{margin:0; padding: 0;}
     padding-right: 33px;
 }
 
-#section1>div:nth-child(1)>ul>li{
+#twitter-section1>div:nth-child(1)>ul>li{
     margin-bottom: 20px;
 }
 
-#section1>div:nth-child(1)>span{
+#twitter-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
     font-size: 20px;
@@ -90,18 +90,18 @@ body{margin:0; padding: 0;}
 }
 
 
-#section1>div:nth-child(1) .twitterImg{
+#twitter-section1>div:nth-child(1) .twitterImg{
     width:85px;  
     margin-top:160px;
     margin-bottom: 48px;
 }
 
-#section1>div:nth-child(2){
+#twitter-section1>div:nth-child(2){
     background: #003b5c;
     width:55vw;
 }
 
-#section1>div:nth-child(2) .twitterAssetsImg{
+#twitter-section1>div:nth-child(2) .twitterAssetsImg{
     width:485px;
     display: block;
     margin: 0 auto;

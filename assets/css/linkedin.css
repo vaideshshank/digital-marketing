@@ -25,13 +25,13 @@
 
 /*Mobile View*/
 @media screen and (max-width:750px){
-    body #section1{
+    body #li-section1{
         flex-direction: column-reverse;
     }
 
-    body #section1>div:nth-child(2){width: 100vw;}
-    body #section1>div:nth-child(1){width:87vw;padding-left: 50px;}
-    body #section1>div:nth-child(2) .liAssetsImg{
+    body #li-section1>div:nth-child(2){width: 100vw;}
+    body #li-section1>div:nth-child(1){width:87vw;padding-left: 50px;}
+    body #li-section1>div:nth-child(2) .liAssetsImg{
         display: block;
         margin:0 auto;
         margin-top:100px;
@@ -39,12 +39,12 @@
         width:80vw;
     }
 
-    body #section1>div:nth-child(1)>ul{
+    body #li-section1>div:nth-child(1)>ul{
         font-size: 4vw;
         width:90%;
     }
 
-    body #section1>div:nth-child(1)>span{
+    body #li-section1>div:nth-child(1)>span{
         font-size:4vw;
     }
     
@@ -53,32 +53,33 @@
 
 body{margin:0; padding: 0;}
 
-#section1{
+#li-section1{
     display: flex;
 }
 
-#section1>div:nth-child(1){
+#li-section1>div:nth-child(1){
     background: #0078ba;
     padding-left: 135px;
+    width:42vw;
 }
 
-#section1>div:nth-child(1)>ul{
+#li-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 1.3vw;
     color:white;
     margin-top:15px;
     margin-left: -20px;
     padding-right: 33px;
 }
 
-#section1>div:nth-child(1)>ul>li{
+#li-section1>div:nth-child(1)>ul>li{
     margin-bottom: 20px;
 }
 
-#section1>div:nth-child(1)>span{
+#li-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 20px;
+    font-size: 1.7vw;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
     margin-top: 80px;
@@ -86,16 +87,17 @@ body{margin:0; padding: 0;}
 }
 
 
-#section1>div:nth-child(1) .liImg{
+#li-section1>div:nth-child(1) .liImg{
     width:160px;  
     margin-top:160px;
     margin-bottom: 48px;
 }
 
 
-#section1>div:nth-child(2) .liAssetsImg{
+#li-section1>div:nth-child(2) .liAssetsImg{
     width:570px;
     display: block;
     margin: 0 auto;
     margin-top: 247px;
+    padding:50px;
 }

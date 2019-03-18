@@ -25,13 +25,13 @@
 
 /*Mobile View*/
 @media screen and (max-width:750px){
-    body #section1{
+    body #fb-section1{
         flex-direction: column-reverse;
     }
 
-    body #section1>div:nth-child(2){width: 100vw;}
-    body #section1>div:nth-child(1){width:87vw;padding-left: 50px;}
-    body #section1>div:nth-child(2) .fbAssetsImg{
+    body #fb-section1>div:nth-child(2){width: 100vw;}
+    body #fb-section1>div:nth-child(1){width:87vw;padding-left: 50px;}
+    body #fb-section1>div:nth-child(2) .fbAssetsImg{
         display: block;
         margin:0 auto;
         margin-top:100px;
@@ -39,16 +39,16 @@
         width:80vw;
     }
 
-    body #section1>div:nth-child(1) .fbAdsImg{
+    body #fb-section1>div:nth-child(1) .fbAdsImg{
         width:60vw;
     }
 
-    body #section1>div:nth-child(1)>ul{
+    body #fb-section1>div:nth-child(1)>ul{
         font-size: 4vw;
         width:90%;
     }
 
-    body #section1>div:nth-child(1)>span{
+    body #fb-section1>div:nth-child(1)>span{
         font-size:4vw;
     }
     
@@ -56,53 +56,54 @@
 
 body{margin:0; padding: 0;}
 
-#section1{
+#fb-section1{
     display: flex;
 }
 
-#section1>div:nth-child(1){
-    width:38vw;
+#fb-section1>div:nth-child(1){
+    width:40vw;
     background: #33599d;
     padding-left: 135px;
 }
 
-#section1>div:nth-child(1)>ul{
+#fb-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 1.7vw;
     color:white;
     margin-top:15px;
     margin-left: -20px;
 }
 
-#section1>div:nth-child(1)>ul>li{
+#fb-section1>div:nth-child(1)>ul>li{
     margin-bottom: 20px;
 }
 
-#section1>div:nth-child(1)>span{
+#fb-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 20px;
+    font-size: 1.5vw;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
     margin-top: 80px;
     margin-bottom: 30px;
 }
 
-#section1>div:nth-child(1) .fbImg{
+#fb-section1>div:nth-child(1) .fbImg{
     width:45px;  
     margin-top:153px;
     margin-bottom: 40px;
 }
 
-#section1>div:nth-child(1) .fbAdsImg{
-    width:370px;
+#fb-section1>div:nth-child(1) .fbAdsImg{
+    width:70%;
 }
 
-#section1>div:nth-child(2){
+#fb-section1>div:nth-child(2){
     width:52vw;
 }
 
-#section1>div:nth-child(2) .fbAssetsImg{
+#fb-section1>div:nth-child(2) .fbAssetsImg{
+    display:block;
     width:530px;
     margin:0 auto;
     margin-top: 246px;
