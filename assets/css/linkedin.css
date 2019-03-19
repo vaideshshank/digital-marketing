@@ -59,13 +59,13 @@ body{margin:0; padding: 0;}
 
 #li-section1>div:nth-child(1){
     background: #0078ba;
-    padding-left: 135px;
+    padding-left: 50px;
     width:42vw;
 }
 
 #li-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 1.3vw;
+    font-size: 13px;
     color:white;
     margin-top:15px;
     margin-left: -20px;
@@ -79,7 +79,7 @@ body{margin:0; padding: 0;}
 #li-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 1.7vw;
+    font-size: 15px;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
     margin-top: 80px;
@@ -88,16 +88,16 @@ body{margin:0; padding: 0;}
 
 
 #li-section1>div:nth-child(1) .liImg{
-    width:160px;  
-    margin-top:160px;
-    margin-bottom: 48px;
+    width:130px;  
+    margin-top:50px;
+    margin-bottom: 20px;
 }
 
 
 #li-section1>div:nth-child(2) .liAssetsImg{
-    width:570px;
+    width:400px;
     display: block;
     margin: 0 auto;
-    margin-top: 247px;
+    margin-top: 50px;
     padding:50px;
 }

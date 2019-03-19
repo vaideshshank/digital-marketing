@@ -67,13 +67,13 @@ body{margin:0; padding: 0;}
 
 #quora-section1>div:nth-child(1){
     background: #b61317;
-    padding-left: 135px;
+    padding-left: 50px;
     width:40vw;
 }
 
 #quora-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 1.4vw;
+    font-size: 13px;
     color:white;
     margin-top:15px;
     margin-left: -20px;
@@ -87,10 +87,10 @@ body{margin:0; padding: 0;}
 #quora-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 1.8vw;
+    font-size: 16px;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
@@ -98,29 +98,29 @@ body{margin:0; padding: 0;}
     display: block;
     font-family: Poppins-Medium;
     color:white;
-    font-size: 1.2vw;
+    font-size: 10px;
     padding-left:20px;
     padding-right: 20px;
-    padding-top:18px;
-    padding-bottom:18px;
+    padding-top:10px;
+    padding-bottom:10px;
     background: #6814149a;
-    width: 30vw;
+    width: 27vw;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
 #quora-section1>div:nth-child(1) .quoraImg{
-    width:202px;  
-    margin-top:153px;
-    margin-bottom: 40px;
+    width:150px;  
+    margin-top:50px;
+    margin-bottom: 10px;
 }
 
 
 #quora-section1>div:nth-child(2) .quoraAssetsImg{
-    width:594px;
+    width:500px;
     display: block;
     margin: 0 auto;
-    margin-top: 296px;
+    margin-top: 100px;
     padding-left:10px;
-    padding-rightt:10px;
+    padding-right:10px;
 }

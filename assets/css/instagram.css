@@ -68,13 +68,13 @@ body{margin:0; padding: 0;}
 
 #insta-section1>div:nth-child(1){
     background: #e90077;
-    padding-left: 135px;
-    width:43vw;
+    padding-left: 50px;
+    width:40vw;
 }
 
 #insta-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 1.3vw;
+    font-size: 13px;
     color:white;
     margin-top:15px;
     margin-left: -20px;
@@ -88,7 +88,7 @@ body{margin:0; padding: 0;}
 #insta-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 1.5vw;
+    font-size: 15px;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
     margin-top: 80px;
@@ -97,16 +97,16 @@ body{margin:0; padding: 0;}
 
 
 #insta-section1>div:nth-child(1) .instaImg{
-    width:288px;  
-    margin-top:160px;
-    margin-bottom: 48px;
+    width:200px;  
+    margin-top:50px;
+    margin-bottom: 20px;
 }
 
 
 #insta-section1>div:nth-child(2) .instaAssetsImg{
-    width:600px;
+    width:400px;
     display: block;
     margin: 0 auto;
     padding:20px;
-    margin-top: 200px;
+    margin-top: 5px;
 }

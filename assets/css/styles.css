@@ -311,6 +311,10 @@ body{
     overflow-y:scroll;
 }
 
+#section3 .iframes::-webkit-scrollbar{
+    display:none;
+}
+
 /*#section3 .iframes>section{
     position: relative;
     height:500px;

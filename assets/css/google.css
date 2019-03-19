@@ -68,13 +68,13 @@ body{margin:0; padding: 0;}
 
 #google-section1>div:nth-child(1){
     background: #ffa300;
-    padding-left: 135px;
+    padding-left: 40px;
     width:40vw;
 }
 
 #google-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 1.2vw;
+    font-size: 13px;
     color:white;
     margin-top:15px;
     margin-left: -20px;
@@ -88,24 +88,28 @@ body{margin:0; padding: 0;}
 #google-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 1.5vw;
+    font-size: 15px;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
 
 #google-section1>div:nth-child(1) .googleImg{
-    width:242px;  
-    margin-top:160px;
-    margin-bottom: 48px;
+    width:200px;  
+    margin-top:50px;
+    margin-bottom: 30px;
     filter:invert(100%);
 }
 
 #google-section1>div:nth-child(2) .googleAssetsImg{
-    width:658px;
+    width:50vw;
     display: block;
     margin: 0 auto;
-    margin-top: 250px;
+    margin-top: 100px;
+}
+
+#google-section1>div:nth-child(2){
+    background-color:white;
 }

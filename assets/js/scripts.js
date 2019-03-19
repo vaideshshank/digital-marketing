@@ -6,7 +6,6 @@ route=(obj)=>{
 
 function parallax1(el,scrollVal){
     $(el).css('margin-top',-scrollVal/70+"%");
-    console.log("crenj,");
 }
 
 $(document).ready(function(){
@@ -21,6 +20,14 @@ $(document).ready(function(){
         }
         
     })*/
+    var topPos=$("#section3 .iframes").offset().top;
+    $("#section3 .iframes").mousewheel(function(e,delta){
+        if(this.scrollLeft!=this.scrollLeft-delta*5){
+            this.scrollLeft-=delta*5;
+            e.preventDefault();
+        }
+    })
+    
     $(window).scroll(function(e){
         var scroll=$(this).scrollTop();
         parallax1("#dots3",scroll);
@@ -28,7 +35,5 @@ $(document).ready(function(){
         if((scroll+$(this).height())>$("#dots5").offset().top-4){
             parallax1("#dots5",((scroll+$(this).height())-$("#dots5").offset().top-20));
         }
-
-        
     })
 })

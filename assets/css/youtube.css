@@ -66,13 +66,13 @@ body{margin:0; padding: 0;}
 
 #youtube-section1>div:nth-child(1){
     background: #282828;
-    padding-left: 135px;
+    padding-left: 50px;
     width:40vw
 }
 
 #youtube-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 1.4vw;
+    font-size: 13px;
     color:white;
     margin-top:15px;
     margin-left: -20px;
@@ -86,25 +86,25 @@ body{margin:0; padding: 0;}
 #youtube-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 1.7vw;
+    font-size: 16px;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
 #youtube-section1>div:nth-child(1) .ytImg{
-    width:98px;  
-    margin-top:153px;
-    margin-bottom: 40px;
+    width:70px;  
+    margin-top:50px;
+    margin-bottom: 20px;
 }
 
 
 #youtube-section1>div:nth-child(2) .ytAssetsImg{
-    width:480px;
+    width:400px;
     display: block;
     margin: 0 auto;
-    margin-top: 246px;
+    margin-top: 100px;
     padding-left:60px;
     padding-right:60px;
 }
