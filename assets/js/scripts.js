@@ -20,11 +20,15 @@ $(document).ready(function(){
         }
         
     })*/
-    var topPos=$("#section3 .iframes").offset().top;
+    //var topPos=$("#section3 .iframes").offset().top;
     $("#section3 .iframes").mousewheel(function(e,delta){
         if(this.scrollLeft!=this.scrollLeft-delta*5){
+            var s1=this.scrollLeft;
             this.scrollLeft-=delta*5;
-            e.preventDefault();
+            if(this.scrollLeft-s1!=0){
+                e.preventDefault();
+            }
+            
         }
     })
     
