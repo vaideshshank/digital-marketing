@@ -7,62 +7,65 @@ route=(obj)=>{
 function parallax1(el,scrollVal){
     $(el).css('margin-top',-scrollVal/70+"%");
 }
-var i=0,curr_scr=this.scrollLeft;
+var pos=0,curr_scr=this.scrollLeft;
 $(document).ready(function(){
     
-    var i=false;
+    var check=false;
     
     var scrollPos=[]
     for(i=0; i<7; i++){
         scrollPos.push($("#section3 .iframes>section").eq(i).offset().left+10);
-    }
+    }   
     
+
     $("#section3 .iframes").mousewheel(function(e,delta){
-         
-        if(this.scrollLeft!=this.scrollLeft-delta*5){
-            var s1=this.scrollLeft;
-            this.scrollLeft-=delta*5;
-            if(this.scrollLeft-s1!=0){
-                e.preventDefault();
-            }
+        var s1=this.scrollLeft;
+                this.scrollLeft-=delta;
+                
+        if(this.scrollLeft-s1!=0){
+            e.preventDefault();
+        }
+        if(!check){
+            check=true;
+            
+                
+                
+                if(pos<6 && (this.scrollLeft)-s1>0){
+                    (this).scrollLeft-=delta*5;
+                    pos=(++pos);
+                }else if(pos>0 && (this.scrollLeft)-s1<0){
+                    (this).scrollLeft-=delta*5;
+                    pos=(--pos);
+                 }
+                
+                console.log(pos);
+   
+                $(this).animate({scrollLeft:scrollPos[pos]-scrollPos[0]},{
+                    easing:'swing',
+                    duration:1500,
+                    complete:function(){
+                        check=false;
+                    }
+                });
+            
             
         }
+        
+        
+        
       //  curr_scr=this.scrollLeft;   
     })
 
     //scroll Animation
     var i=0;
 
-    function scrollAnimate(target,speed){
-        setInterval(function(){
-            if(i==6){
-                $(target).animate({scrollLeft:scrollPos[0]-scrollPos[i]},{
-                    easing:'swing',
-                    duration:speed,
-                    complete:function(){
-                        i=(++i)%7;
-                        //console.log(i);
-                    }
-                });    
-            }else{
-            $(target).animate({scrollLeft:scrollPos[i+1]-scrollPos[0]},{
-                duration:speed,
-                complete:function(){
-                    i=(++i)%7;
-                    //console.log(i);
-                }
-            });
-        }
-            
-        },speed+1500);
-    }
     
     /*$("#section3 .iframes>section").animate({
         'position':'relative',
         'left':'-=100px'
     },200);*/
 
-    scrollAnimate($("#section3 .iframes"),3000);
+    //scrollAnimate($("#section3 .iframes"),3000);
             
     
     
