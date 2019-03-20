@@ -23,35 +23,72 @@
     src:url('../fonts/Poppins-Medium.otf') format('opentype');
 }
 
+
+/*Mobile View*/
+@media screen and (max-width:750px){
+    body #insta-section1{
+        flex-direction: column-reverse;
+    }
+
+    body #insta-section1>div:nth-child(2){width: 100vw;}
+    body #insta-section1>div:nth-child(1){width:93vw;padding-left: 30px;}
+    body #insta-section1>div:nth-child(2) .instaAssetsImg{
+        display: block;
+        margin:0 auto;
+        margin-top:50px;
+        margin-bottom: 50px;
+        width:80vw;
+    }
+
+    body #insta-section1>div:nth-child(1) .instaAdsImg{
+        width:60vw;
+    }
+
+    body #insta-section1>div:nth-child(1)>ul{
+        font-size: 4vw;
+        width:90%;
+    }
+
+    body #insta-section1>div:nth-child(2) .instaAssetsImg{
+        width:80vw;
+    }
+
+    body #insta-section1>div:nth-child(1)>span{
+        font-size:4vw;
+    }
+    
+}
+
+
 body{margin:0; padding: 0;}
 
-#section1{
-    display: grid;
-    grid-template-columns: 50% auto;
+#insta-section1{
+    display:grid;
+    grid-template-columns: 50vw 50vw;
 }
 
-#section1>div:nth-child(1){
+#insta-section1>div:nth-child(1){
     background: #e90077;
-    padding-left: 135px;
+    padding-left: 50px;
 }
 
-#section1>div:nth-child(1)>ul{
+#insta-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 13px;
     color:white;
     margin-top:15px;
     margin-left: -20px;
     padding-right: 33px;
 }
 
-#section1>div:nth-child(1)>ul>li{
+#insta-section1>div:nth-child(1)>ul>li{
     margin-bottom: 20px;
 }
 
-#section1>div:nth-child(1)>span{
+#insta-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 20px;
+    font-size: 15px;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
     margin-top: 80px;
@@ -59,16 +96,17 @@ body{margin:0; padding: 0;}
 }
 
 
-#section1>div:nth-child(1) .instaImg{
-    width:288px;  
-    margin-top:160px;
-    margin-bottom: 48px;
+#insta-section1>div:nth-child(1) .instaImg{
+    width:200px;  
+    margin-top:50px;
+    margin-bottom: 20px;
 }
 
 
-#section1>div:nth-child(2) .instaAssetsImg{
-    width:570px;
+#insta-section1>div:nth-child(2) .instaAssetsImg{
+    width:450px;
     display: block;
     margin: 0 auto;
-    margin-top: 200px;
+    padding:20px;
+    margin-top: 5px;
 }

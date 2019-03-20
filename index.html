@@ -6,18 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Digital Marketing</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mobile-styles.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+
+    <!--CSS files for social media links-->
+    <link rel="stylesheet" href="assets/css/facebook.css">
+    <link rel="stylesheet" href="assets/css/google.css">
+    <link rel="stylesheet" href="assets/css/instagram.css">
+    <link rel="stylesheet" href="assets/css/linkedin.css">
+    <link rel="stylesheet" href="assets/css/quora.css">
+    <link rel="stylesheet" href="assets/css/twitter.css">
+    <link rel="stylesheet" href="assets/css/youtube.css">
+
 </head>
 <body>
     <nav id="navigation">
-        <span><img src=""/>rcee</span>
-        <span>Facebook</span>
-        <span>Twitter</span>
-        <span>Instagram</span>
-        <span>LinkedIn</span>
-        <span>Youtube</span>
-        <span>Quora</span>
-        <span>Google</span>
+        <span><img src=""/>Logo</span>
+        <span>
+            <span onclick="route(this)">Facebook</span>
+            <span onclick="route(this)">Twitter</span>
+            <span onclick="route(this)">Instagram</span>
+            <span onclick="route(this)">LinkedIn</span>
+            <span onclick="route(this)">Youtube</span>
+            <span onclick="route(this)">Quora</span>
+            <span onclick="route(this)">Google</span>
+        </span>
+        <div class="mobile-menu">
+            <span onclick="route(this)">Facebook</span>
+            <span onclick="route(this)">Twitter</span>
+            <span onclick="route(this)">Instagram</span>
+            <span onclick="route(this)">LinkedIn</span>
+            <span onclick="route(this)">Youtube</span>
+            <span onclick="route(this)">Quora</span>
+            <span onclick="route(this)">Google</span>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" class="humburger"></i>
     </nav>
     <img src="assets/Digital Marketing/Images/Dots Copy 2.png" id="dots1">
 
@@ -53,10 +80,26 @@
             <img src="assets/Digital Marketing/Images/Group 2 Copy.png" id="dots3">
             <div>Growth of Digital Marketing in last few years</div>
             <div class="flex2">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <span>2016</span>
+                    <span>+4.2%</span>
+                    <div></div>
+                </div>
+                <div>
+                    <span>2017</span>
+                    <span>+14.6%</span>
+                    <div></div>
+                </div>
+                <div>
+                    <span>2018</span>
+                    <span>+22.8%</span>
+                    <div></div>
+                </div>
+                <div>
+                    <span>2019</span>
+                    <span>+35.9%</span>
+                    <div></div>
+                </div>
             </div>
         </div>
         
@@ -134,6 +177,123 @@
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
 
+        <div class="iframes">
+            <section id="fb-section1">
+                <div>
+                    <img src="assets/Digital Marketing/Fb/Bitmap.png" class="fbImg">
+                    <ul>
+                        <li>The best place to kick start your business</li>
+                        <li>Traffic Increase owing to over 1 billion users</li>
+                    </ul>
+                    <span>Some of the work done by the team</span>
+                    <img src="assets/Digital Marketing/Fb/Ads Images.png" class="fbAdsImg">
+                </div>
+                <div>
+                    <img src="assets/Digital Marketing/Fb/Fb asset.png" class="fbAssetsImg">
+                </div>
+            </section>
+            
+            <section id="google-section1">
+                <div>
+                    <img src="assets/Digital Marketing/Google/google-logo.png" class="googleImg">
+                    <ul>
+                        <li>The place where you went to search for every other thing would help people find YOU.</li>
+                        <li>We know ORGANIC is the way of life and trust us, ORGANIC GROWTH is what we do.</li>
+                        <li>Reach out to US. We’ll make a marketing campaign tailored just for you</li>
+                    </ul>
+                    <span>Some of the work done by the team</span>
+                </div>
+                <div>
+                    <img src="assets/Digital Marketing/Google/Bitmap.png" class="googleAssetsImg">
+                </div>
+            </section>
+            
+            <section id="insta-section1">
+                <div>
+                    <img src="assets/Digital Marketing/Instagram/Bitmap.png" class="instaImg">
+                    <ul>
+                        <li>We love to show your photography skills here</li>
+                        <li>Gaining followers is the easiest ever. Build a consistent userbase</li>
+                    </ul>
+                    <span>Some of the work done by the team</span>
+                </div>
+                <div>
+                    <img src="assets/Digital Marketing/Instagram/Group 3.png" class="instaAssetsImg">
+                </div>
+            </section>
+            
+            <section id="li-section1">
+                <div>
+                    <img src="assets/Digital Marketing/LinkedIn/Bitmap.png" class="liImg">
+                    <ul>
+                        <li>Here, even our content is wrapped around with a Tux</li>
+                        <li>The only place you can be offered to be funded within a month</li>
+                        <li>Video content goes viral, once a month. Easily reaching over a million people</li>
+                    </ul>
+                    <span>Some of the work done by the team</span>
+                </div>
+                <div>
+                    <img src="assets/Digital Marketing/LinkedIn/973.png" class="liAssetsImg">
+                </div>
+            </section>
+            
+            <section id="quora-section1">
+                <div>
+                    <img src="assets/Digital Marketing/Quora/Bitmap.png" class="quoraImg">
+                    <ul>
+                        <li>Quench their curiosity</li>
+                        <li>Answer the questions people are already searching for your business, isn’t that wonderful?</li>
+                    </ul>
+                    <span>Some of the work done by the team</span>
+                    <div>
+                        <span>Will you be relevant amongst the pool of competitors?</span>
+                        <span>Why are there crushed stones alongside rail tracks?</span>
+                        <span>What is it like to regret having more than 2 children?</span>
+                        <span>Who are the coolest looking people in all human history?</span>
+                        <span>Will you be relevant amongst the pool of competitors?</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/Digital Marketing/Quora/Asset 1.png" class="quoraAssetsImg">
+                </div>
+            </section>
+
+            <section id="twitter-section1">
+                <div>
+                    <img src="assets/Digital Marketing/Twitter/Logo.png" class="twitterImg">
+                    <ul>
+                        <li>The dope your tweet is, the faster people get in touch with you</li>
+                        <li>SWAG is real here, the witty you are, the better</li>
+                    </ul>
+                    <span>Some of the work done by the team</span>
+                </div>
+                <div>
+                    <img src="assets/Digital Marketing/Twitter/Bitmap.png" class="twitterAssetsImg">
+                </div>
+            </section>
+
+            <section id="youtube-section1">
+                <div>
+                    <img src="assets/Digital Marketing/Youtube/Bitmap.png" class="ytImg">
+                    <ul>
+                        <li>Did you ever want to be a part of a Movie? Your chance to show your skills to the audience is right now.</li>
+                        <li>Send us your video portraying Marlon from Godfather: "I'm going to make him an offer he can't refuse." This would be your chance to get a free assessment of all your social media platform.</li>
+                    </ul>
+                    <span>Some of the work done by the team</span>
+                    <div>
+                        <!--
+                        <iframe width="300" height="150" src="https://www.youtube.com/embed/eVTXPUF4Oz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="300" height="150" src="https://www.youtube.com/embed/kXYiU_JCYtU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        -->
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/Digital Marketing/Youtube/Asset 1.png" class="ytAssetsImg">
+                </div>
+            </section>
+            
+        </div>
+
         <div class="flex6">
             <div>
                 <img src="assets/Digital Marketing/Images/Technology.png" alt="">
@@ -170,6 +330,5 @@
             <i class="fa fa-paper-plane" aria-hidden="true"></i>
         </div>
     </section>
-    
 </body>
 </html>

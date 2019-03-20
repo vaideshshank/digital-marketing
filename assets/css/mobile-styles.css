@@ -1,0 +1,116 @@
+
+@media screen and (max-width:675px){
+    body #dots1{width:50vw;}
+    body #dots2{width:22vw;position: relative;top:100px;}
+    body #dots4{width:50vw;}
+    body #dots6,body #dots7{width:50vw;}
+    body #dots6{
+        position: relative;
+        top:-50px;
+        margin-left:0;
+    }
+
+    body #dots7{
+        position: relative;
+        top:-25vh;
+        right:-30vw;
+    }
+
+    body #slider{
+        position: relative;
+        top:-30vh;
+    }
+
+    body #section1 .banner>span:nth-child(4){font-size:11vw;margin-top:-20vw;}
+    body #section1 .banner>span:nth-child(2){font-size:4.5vw;}
+    body #section1 .banner>span:nth-child(3){font-size:3vw;}
+    body #section1 .banner>img:nth-child(1){width:18vw;margin-left:40vw;}
+    body #section1 .banner>img:nth-child(5){
+        width:25vw;
+        margin-right:45vw;
+        margin-left:0px;
+        margin-top:10vw;
+    }
+
+    body #section3 .flex4{flex-wrap: wrap;}
+    body #section3 .flex4>div>span{margin-bottom: 40px;font-size:12.8px;}
+    body #section3 .flex6{flex-wrap: wrap;margin-top:81px;}
+    body #section3 .flex6>div{margin-top:23px;margin-bottom: 23px;}
+    body #section3 .flex6>div>span:nth-child(2){font-size:14px;}
+    body #section3 .flex6>div>span:nth-child(3){font-size:11px;}
+    body #section3 .head2{width:80vw;font-size: 14px;margin-top:-45vh;}
+}
+
+
+@media screen and (max-width:1050px){
+    body #navigation>span:nth-child(2){
+        display: none;
+    }
+
+    body #navigation .mobile-menu{
+        z-index:1;
+        background-color:rgb(0, 0, 0);
+        position: absolute;
+        width:90vw;
+        height:100vh;
+        top:0;
+        position: fixed;
+    }
+
+    body #navigation .humburger{
+        display: block;
+    }
+
+    body #navigation>span:nth-child(1){
+        float:right;
+        margin-right:17px;
+        margin-top:17px;
+    }
+    body #navigation>i{
+        display: block;
+        margin-left:17px;
+        margin-top:24px;
+    }
+
+    body #section1 .show .flex1>div{
+        width:40vw;
+        margin-top:40px;
+    }
+
+    body #section1 .show .flex1>div>span:nth-child(1){font-size: 20px;}
+    body #section1 .show .flex1>div>span:nth-child(2){font-size: 11px;}
+    
+    body #section1 .show>div:nth-child(3){
+        font-size: 12.6px;
+        width:100%;
+    } 
+
+    body #section1 .show .flex2{overflow-x:scroll;justify-content: flex-start;}
+    body #section1 .show .flex2::-webkit-scrollbar{display:none;}
+    body #dots3{display: none;}
+    body #dots5{display: none;}
+
+    body #section2{
+        padding-left: 0;padding-right: 0;
+        text-align:center;
+    }
+
+    body #section2>span:nth-child(1){
+        font-size:12px;
+    }
+
+    body #section2 .flex3{
+        flex-wrap:wrap;
+    }
+
+    body #section2 .flex3>div{margin-bottom: 46px;}
+    body #section2 .flex3>div>img{width:30px;}
+    body #section2 .flex3>div>span:nth-child(2){font-size:12px;}
+    body #section2 .flex3>div>span:nth-child(3){font-size:9px;}
+
+    body #section3 .head1{font-size: 16px;left:-30vw;}
+
+    body #section3 .flex5{padding-left: 20px; width:95vw;}
+    body #section3 .flex5>div{min-width: 221px;font-size: 10px;height: 58px;}
+    body #section3 .arrows{display: none;}
+}

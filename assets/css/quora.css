@@ -23,66 +23,104 @@
     src:url('../fonts/Poppins-Medium.otf') format('opentype');
 }
 
+/*Mobile View*/
+@media screen and (max-width:750px){
+    body #quora-section1{
+        flex-direction: column-reverse;
+    }
+
+    body #quora-section1>div:nth-child(2){width: 100vw;}
+    body #quora-section1>div:nth-child(1){width:88vw;padding-left: 50px;}
+    body #quora-section1>div:nth-child(2) .quoraAssetsImg{
+        display: block;
+        margin:0 auto;
+        margin-top:100px;
+        margin-bottom: 100px;
+        width:80vw;
+    }
+
+    body #quora-section1>div:nth-child(1) .quoraAdsImg{
+        width:60vw;
+    }
+
+    body #quora-section1>div:nth-child(1)>div>span{
+        width:63vw;
+    }
+
+    body #quora-section1>div:nth-child(1)>ul{
+        font-size: 4vw;
+        width:90%;
+    }
+
+    body #quora-section1>div:nth-child(1)>span{
+        font-size:4vw;
+    }
+    
+}
+
+
 body{margin:0; padding: 0;}
 
-#section1{
+#quora-section1{
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 50vw 50vw;
 }
 
-#section1>div:nth-child(1){
+#quora-section1>div:nth-child(1){
     background: #b61317;
-    padding-left: 135px;
+    padding-left: 50px;
 }
 
-#section1>div:nth-child(1)>ul{
+#quora-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 13px;
     color:white;
     margin-top:15px;
     margin-left: -20px;
     padding-right: 33px;
 }
 
-#section1>div:nth-child(1)>ul>li{
+#quora-section1>div:nth-child(1)>ul>li{
     margin-bottom: 20px;
 }
 
-#section1>div:nth-child(1)>span{
+#quora-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 20px;
+    font-size: 16px;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
-#section1>div:nth-child(1)>div>span{
+#quora-section1>div:nth-child(1)>div>span{
     display: block;
     font-family: Poppins-Medium;
     color:white;
-    font-size: 16px;
+    font-size: 14px;
     padding-left:20px;
     padding-right: 20px;
-    padding-top:18px;
-    padding-bottom:18px;
+    padding-top:10px;
+    padding-bottom:10px;
     background: #6814149a;
-    width: 370px;
+    width: 27vw;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
-#section1>div:nth-child(1) .quoraImg{
-    width:202px;  
-    margin-top:153px;
-    margin-bottom: 40px;
+#quora-section1>div:nth-child(1) .quoraImg{
+    width:150px;  
+    margin-top:50px;
+    margin-bottom: 10px;
 }
 
 
-#section1>div:nth-child(2) .quoraAssetsImg{
-    width:594px;
+#quora-section1>div:nth-child(2) .quoraAssetsImg{
+    width:500px;
     display: block;
     margin: 0 auto;
-    margin-top: 296px;
+    margin-top: 100px;
+    padding-left:10px;
+    padding-right:10px;
 }

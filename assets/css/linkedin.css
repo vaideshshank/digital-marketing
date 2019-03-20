@@ -23,35 +23,63 @@
     src:url('../fonts/Poppins-Medium.otf') format('opentype');
 }
 
+/*Mobile View*/
+@media screen and (max-width:750px){
+    body #li-section1{
+        flex-direction: column-reverse;
+    }
+
+    body #li-section1>div:nth-child(2){width: 100vw;}
+    body #li-section1>div:nth-child(1){width:87vw;padding-left: 50px;}
+    body #li-section1>div:nth-child(2) .liAssetsImg{
+        display: block;
+        margin:0 auto;
+        margin-top:100px;
+        margin-bottom: 100px;
+        width:80vw;
+    }
+
+    body #li-section1>div:nth-child(1)>ul{
+        font-size: 4vw;
+        width:90%;
+    }
+
+    body #li-section1>div:nth-child(1)>span{
+        font-size:4vw;
+    }
+    
+}
+
+
 body{margin:0; padding: 0;}
 
-#section1{
+#li-section1{
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 50vw 50vw;
 }
 
-#section1>div:nth-child(1){
+#li-section1>div:nth-child(1){
     background: #0078ba;
-    padding-left: 135px;
+    padding-left: 50px;
 }
 
-#section1>div:nth-child(1)>ul{
+#li-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 13px;
     color:white;
     margin-top:15px;
     margin-left: -20px;
     padding-right: 33px;
 }
 
-#section1>div:nth-child(1)>ul>li{
+#li-section1>div:nth-child(1)>ul>li{
     margin-bottom: 20px;
 }
 
-#section1>div:nth-child(1)>span{
+#li-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 20px;
+    font-size: 15px;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
     margin-top: 80px;
@@ -59,16 +87,17 @@ body{margin:0; padding: 0;}
 }
 
 
-#section1>div:nth-child(1) .liImg{
-    width:160px;  
-    margin-top:160px;
-    margin-bottom: 48px;
+#li-section1>div:nth-child(1) .liImg{
+    width:130px;  
+    margin-top:50px;
+    margin-bottom: 20px;
 }
 
 
-#section1>div:nth-child(2) .liAssetsImg{
-    width:570px;
+#li-section1>div:nth-child(2) .liAssetsImg{
+    width:450px;
     display: block;
     margin: 0 auto;
-    margin-top: 247px;
+    margin-top: 50px;
+    padding:50px;
 }

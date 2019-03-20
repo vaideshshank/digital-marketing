@@ -23,51 +23,88 @@
     src:url('../fonts/Poppins-Medium.otf') format('opentype');
 }
 
+/*Mobile View*/
+@media screen and (max-width:750px){
+    body #youtube-section1{
+        flex-direction: column-reverse;
+    }
+
+    body #youtube-section1>div:nth-child(2){width: 100vw;}
+    body #youtube-section1>div:nth-child(1){width:87vw;padding-left: 50px;}
+    body #youtube-section1>div:nth-child(2) .ytAssetsImg{
+        display: block;
+        margin:0 auto;
+        margin-top:100px;
+        margin-bottom: 100px;
+        width:80vw;
+    }
+
+    body #youtube-section1>div:nth-child(1) .fbAdsImg{
+        width:60vw;
+    }
+
+    body #youtube-section1>div:nth-child(1)>div>iframe{
+        width:78vw;
+    }
+
+    body #youtube-section1>div:nth-child(1)>ul{
+        font-size: 4vw;
+        width:90%;
+    }
+
+    body #youtube-section1>div:nth-child(1)>span{
+        font-size:4vw;
+    }
+    
+}
+
 body{margin:0; padding: 0;}
 
-#section1{
+#youtube-section1{
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 50vw 49.45vw;
 }
 
-#section1>div:nth-child(1){
+#youtube-section1>div:nth-child(1){
     background: #282828;
-    padding-left: 135px;
+    padding-left: 50px;
 }
 
-#section1>div:nth-child(1)>ul{
+#youtube-section1>div:nth-child(1)>ul{
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 13px;
     color:white;
     margin-top:15px;
     margin-left: -20px;
     padding-right: 33px;
 }
 
-#section1>div:nth-child(1)>ul>li{
+#youtube-section1>div:nth-child(1)>ul>li{
     margin-bottom: 20px;
 }
 
-#section1>div:nth-child(1)>span{
+#youtube-section1>div:nth-child(1)>span{
     display: block;
     font-family: Poppins-SemiBold;
-    font-size: 20px;
+    font-size: 16px;
     color:rgba(255, 255, 255, 0.507);
     text-transform: uppercase;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
-#section1>div:nth-child(1) .ytImg{
-    width:98px;  
-    margin-top:153px;
-    margin-bottom: 40px;
+#youtube-section1>div:nth-child(1) .ytImg{
+    width:70px;  
+    margin-top:50px;
+    margin-bottom: 20px;
 }
 
 
-#section1>div:nth-child(2) .ytAssetsImg{
-    width:472px;
+#youtube-section1>div:nth-child(2) .ytAssetsImg{
+    width:430px;
     display: block;
     margin: 0 auto;
-    margin-top: 246px;
+    margin-top: 100px;
+    padding-left:60px;
+    padding-right:60px;
 }
