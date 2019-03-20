@@ -63,13 +63,13 @@
 body{margin:0; padding: 0;}
 
 #google-section1{
-    display: flex;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
 }
 
 #google-section1>div:nth-child(1){
     background: #ffa300;
     padding-left: 40px;
-    width:40vw;
 }
 
 #google-section1>div:nth-child(1)>ul{
@@ -104,7 +104,7 @@ body{margin:0; padding: 0;}
 }
 
 #google-section1>div:nth-child(2) .googleAssetsImg{
-    width:50vw;
+    width:45vw;
     display: block;
     margin: 0 auto;
     margin-top: 100px;

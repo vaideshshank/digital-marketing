@@ -57,11 +57,11 @@
 body{margin:0; padding: 0;}
 
 #twitter-section1{
-    display: flex;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
 }
 
 #twitter-section1>div:nth-child(1){
-    width:40vw;
     background: #2baef2;
     padding-left: 50px;
 }
@@ -98,11 +98,10 @@ body{margin:0; padding: 0;}
 
 #twitter-section1>div:nth-child(2){
     background: #003b5c;
-    width:45vw;
 }
 
 #twitter-section1>div:nth-child(2) .twitterAssetsImg{
-    width:400px;
+    width:450px;
     display: block;
     margin: 0 auto;
     margin-top: 50px;

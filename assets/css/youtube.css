@@ -61,13 +61,13 @@
 body{margin:0; padding: 0;}
 
 #youtube-section1{
-    display: flex;
+    display: grid;
+    grid-template-columns: 50vw 49.45vw;
 }
 
 #youtube-section1>div:nth-child(1){
     background: #282828;
     padding-left: 50px;
-    width:40vw
 }
 
 #youtube-section1>div:nth-child(1)>ul{
@@ -101,7 +101,7 @@ body{margin:0; padding: 0;}
 
 
 #youtube-section1>div:nth-child(2) .ytAssetsImg{
-    width:400px;
+    width:430px;
     display: block;
     margin: 0 auto;
     margin-top: 100px;

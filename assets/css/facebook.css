@@ -57,11 +57,11 @@
 body{margin:0; padding: 0;}
 
 #fb-section1{
-    display: flex;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
 }
 
 #fb-section1>div:nth-child(1){
-    width:35vw;
     background: #33599d;
     padding-left: 50px;
 }
@@ -98,9 +98,6 @@ body{margin:0; padding: 0;}
     width:40%;
 }
 
-#fb-section1>div:nth-child(2){
-    width:52vw;
-}
 
 #fb-section1>div:nth-child(2) .fbAssetsImg{
     display:block;
