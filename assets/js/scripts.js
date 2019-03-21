@@ -35,12 +35,12 @@ $(document).ready(function(){
     function sliderAnimation(el,e,delta){
         var s1=el.scrollLeft;
         el.scrollLeft-=delta;
-                
-        if((el.scrollLeft-s1!=0 && pos!=6) || (el.scrollLeft-s1!=0 && el.scrollLeft-s1!=1 && el.scrollLeft-s1!=2 && pos==6)){
+        var diff=Math.floor(el.scrollLeft-s1);   
+        if((diff!=0 && pos!=6) || (diff!=0 && diff!=1 && diff!=2 && pos==6)){
             e.preventDefault();
         }    
 
-        if(pos==6){console.log(el.scrollLeft-s1)}
+        if(pos==6){console.log(diff)}
         if(!check){
             check=true;
             if(pos<6 && (el.scrollLeft)-s1>0){
