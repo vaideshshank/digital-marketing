@@ -55,6 +55,10 @@
     body #youtube-section1>div:nth-child(1)>span{
         font-size:4vw;
     }
+
+    body #youtube-section1>div:nth-child(1)>div:nth-child(4)>iframe{
+        width:80vw;
+    }
     
 }
 
@@ -97,6 +101,13 @@ body{margin:0; padding: 0;}
     width:70px;  
     margin-top:50px;
     margin-bottom: 20px;
+}
+
+#youtube-section1>div:nth-child(1)>div:nth-child(4)>iframe{
+    width:25vw;
+    display: block;
+    height:26vh;
+    margin:0 auto;
 }
 
 

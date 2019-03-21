@@ -17,19 +17,30 @@ var pos=0,curr_scr=this.scrollLeft;
 
 $(document).ready(function(){
     var windowWidth=window.innerWidth,selector;
+    //scroll variables
+    let iframeTop=$("#section3 .iframes").offset().top,
+        scrollDown=false,scrollUp=false;
+    var check=false;
+    var scrollPos=[];
+
+    for(i=0; i<7; i++){
+        scrollPos.push($("#section3 .iframes>section").eq(i).offset().left+10);
+    }   
     // if(windowWidth>450){selector="#section3 .iframes";}
     // else{selector="#section3 .iframes>section>div";}    
     selector="#section3 .iframes";
+
+
 
     function sliderAnimation(el,e,delta){
         var s1=el.scrollLeft;
         el.scrollLeft-=delta;
                 
-        if(el.scrollLeft-s1!=0){
+        if((el.scrollLeft-s1!=0 && pos!=6) || (el.scrollLeft-s1!=1 && el.scrollLeft-s1!=2 && pos==6)){
             e.preventDefault();
-        }
+        }    
 
-        
+        if(pos==6){console.log(el.scrollLeft-s1)}
         if(!check){
             check=true;
             if(pos<6 && (el.scrollLeft)-s1>0){
@@ -50,17 +61,6 @@ $(document).ready(function(){
         }
     }
     
-    console.log(windowWidth);
-
-    //scroll variables
-    let iframeTop=$("#section3 .iframes").offset().top,
-        scrollDown=false,scrollUp=false;
-    var check=false;
-    var scrollPos=[];
-
-    for(i=0; i<7; i++){
-        scrollPos.push($("#section3 .iframes>section").eq(i).offset().left+10);
-    }   
     
     $(window).resize(function(){
         scrollPos=[];
@@ -109,9 +109,32 @@ $(document).ready(function(){
                 duration:1000,
                 complete:function(){scrollUp=!scrollUp;}
             });  
-        }*/
-        
-        
+        }*/  
+    });
+
+
+    var hidden=true;
+    $("#navigation>i").click(function(){
+        var mobMenu=$(".mobile-menu");
+        if(hidden){
+            mobMenu.css({display:'block'});
+            mobMenu.animate({
+                left:'0vw',
+            },500);
+
+            $(this).attr("class","fa fa-close");
+            
+            hidden=!hidden;
+        }else{
+            mobMenu.animate({
+                left:'-90vw',
+            },500,function(){
+                mobMenu.css("display","none");
+            });
+            
+            $(this).attr("class","fa fa-bars");
+            hidden=!hidden;
+        }
     })
     
 })

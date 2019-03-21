@@ -100,6 +100,11 @@ body{margin:0; padding: 0;}
     margin-bottom: 20px;
 }
 
+#insta-section1>div:nth-child(1) .instaAdsImg{
+    display:block;
+    width:40%;
+    margin:0 auto;
+}
 
 #insta-section1>div:nth-child(2) .instaAssetsImg{
     width:450px;

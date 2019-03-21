@@ -27,7 +27,9 @@
     color:white;
     font-size:18px;
     display: block;
+    position: fixed;
     display :none;
+    z-index:3;
 }
 
 
@@ -58,6 +60,8 @@ body{
     background: black;
     scroll-behavior: smooth;
     overflow-x:hidden;
+    -webkit-tap-highlight-color:  transparent; 
+
 }
 
 #navigation{
