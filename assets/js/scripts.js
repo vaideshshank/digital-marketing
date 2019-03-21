@@ -29,8 +29,7 @@ $(document).ready(function(){
             e.preventDefault();
         }
 
-        if(pos==6){console.log(el.scrollLeft-s1);}
-
+        
         if(!check){
             check=true;
             if(pos<6 && (el.scrollLeft)-s1>0){

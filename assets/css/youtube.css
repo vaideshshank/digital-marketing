@@ -27,7 +27,7 @@
 @media screen and (max-width:450px){
     body #youtube-section1{
         grid-template-rows: 40vh auto;
-        grid-template-columns: 100vw;
+        grid-template-columns: 98vw;
     }
 
     body #youtube-section1>div:nth-child(2){grid-row:1}

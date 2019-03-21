@@ -57,11 +57,20 @@ body{
     margin:0;padding:0;
     background: black;
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 
 #navigation{
     margin-top: 70px;
     overflow: auto;
+}
+
+#navigation>span:nth-child(1){height:auto;}
+
+#navigation>span>img{
+    width:80px;
+    position: relative;
+    margin-top:-10px;
 }
 
 #navigation>span{
@@ -75,6 +84,7 @@ body{
 #navigation>span:nth-child(2){
     display: flex;
     margin-right: 134px;
+    margin-top:25px;
 }
 
 #navigation>span:nth-child(2)>span{
@@ -218,6 +228,7 @@ body{
     display: flex;
     justify-content: center;
     margin:0 auto;
+    width:100vw;
 }
 
 #section1 .show .flex2>div{
