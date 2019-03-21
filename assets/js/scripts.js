@@ -36,7 +36,7 @@ $(document).ready(function(){
         var s1=el.scrollLeft;
         el.scrollLeft-=delta;
                 
-        if((el.scrollLeft-s1!=0 && pos!=6) || (el.scrollLeft-s1!=1 && el.scrollLeft-s1!=2 && pos==6)){
+        if((el.scrollLeft-s1!=0 && pos!=6) || (el.scrollLeft-s1!=0 && el.scrollLeft-s1!=1 && el.scrollLeft-s1!=2 && pos==6)){
             e.preventDefault();
         }    
 
