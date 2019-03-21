@@ -38,9 +38,9 @@ $(document).ready(function(){
         var diff=Math.floor(el.scrollLeft-s1);   
         if((diff!=0 && pos!=6) || (diff!=0 && diff!=1 && diff!=2 && pos==6)){
             e.preventDefault();
+            console.log("prevented : "+pos)
         }    
 
-        if(pos==6){console.log(diff)}
         if(!check){
             check=true;
             if(pos<6 && (el.scrollLeft)-s1>0){
