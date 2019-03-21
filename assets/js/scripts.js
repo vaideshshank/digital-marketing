@@ -7,7 +7,9 @@ function route(obj){
 }
 
 function parallax1(el,scrollVal){
-    $(el).css('margin-top',-scrollVal/70+"%");
+    $(el).css({
+        'margin-top':-scrollVal/70+"%"
+    });
 }
 
 var pos=0,curr_scr=this.scrollLeft;
@@ -73,12 +75,15 @@ $(document).ready(function(){
 
         //parallax effect
         var scroll=$(this).scrollTop();
-        parallax1("#dots3",scroll);
+        //parallax1("#dots3",scroll);
 
         if((scroll+$(this).height())>$("#dots5").offset().top-4){
             parallax1("#dots5",((scroll+$(this).height())-$("#dots5").offset().top-20));
         }
 
+        if((scroll+$(this).height())>$("#dots3").offset().top-4){
+            parallax1("#dots3",((scroll+$(this).height())-$("#dots3").offset().top-20));
+        }
 
         /*if(scroll>iframeTop-150 && !scrollDown){
             $("html, body").animate({scrollTop:iframeTop},{
