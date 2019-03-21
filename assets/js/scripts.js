@@ -12,10 +12,46 @@ function parallax1(el,scrollVal){
     });
 }
 
+
 var pos=0,curr_scr=this.scrollLeft;
 
-
 $(document).ready(function(){
+    var windowWidth=window.innerWidth,selector;
+    // if(windowWidth>450){selector="#section3 .iframes";}
+    // else{selector="#section3 .iframes>section>div";}    
+    selector="#section3 .iframes";
+
+    function sliderAnimation(el,e,delta){
+        var s1=el.scrollLeft;
+        el.scrollLeft-=delta;
+                
+        if(el.scrollLeft-s1!=0){
+            e.preventDefault();
+        }
+
+        if(pos==6){console.log(el.scrollLeft-s1);}
+
+        if(!check){
+            check=true;
+            if(pos<6 && (el.scrollLeft)-s1>0){
+                (el).scrollLeft-=delta*5;
+                pos=(++pos);
+            }else if(pos>0 && (el.scrollLeft)-s1<0){
+                (el).scrollLeft-=delta*5;
+                pos=(--pos);
+            }
+            
+            $(el).animate({scrollLeft:scrollPos[pos]-scrollPos[0]},{
+                easing:'swing',
+                duration:1500,
+                complete:function(){
+                    check=false;
+                }
+            });   
+        }
+    }
+    
+    console.log(windowWidth);
 
     //scroll variables
     let iframeTop=$("#section3 .iframes").offset().top,
@@ -32,42 +68,19 @@ $(document).ready(function(){
         for(i=0; i<7; i++){
             scrollPos.push($("#section3 .iframes>section").eq(i).offset().left+10);
         }   
+        windowWidth=this.innerWidth;
+        // if(windowWidth>450){selector="#section3 .iframes";}
+        // else{selector="#section3 .iframes>section>div:nth-child(2)";}    
     })
+
+
 
     //Iframe slider animation
 
-    $("#section3 .iframes").mousewheel(function(e,delta){
-        var s1=this.scrollLeft;
-        this.scrollLeft-=delta;
-                
-        if(this.scrollLeft-s1!=0){
-            e.preventDefault();
-        }
-
-        if(pos==6){console.log(this.scrollLeft-s1);}
-
-        if(!check){
-            check=true;
-                if(pos<6 && (this.scrollLeft)-s1>0){
-                    (this).scrollLeft-=delta*5;
-                    pos=(++pos);
-                }else if(pos>0 && (this.scrollLeft)-s1<0){
-                    (this).scrollLeft-=delta*5;
-                    pos=(--pos);
-                 }
-                
-                //console.log(pos);
-   
-                $(this).animate({scrollLeft:scrollPos[pos]-scrollPos[0]},{
-                    easing:'swing',
-                    duration:1500,
-                    complete:function(){
-                        check=false;
-                    }
-                });   
-        } 
+    $(selector).mousewheel(function(e,delta){
+        sliderAnimation(this,e,delta);
     })
-
+    
     var i=0;
     //Parallax effect
 
