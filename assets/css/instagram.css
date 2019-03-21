@@ -25,19 +25,20 @@
 
 
 /*Mobile View*/
-@media screen and (max-width:750px){
+@media screen and (max-width:450px){
     body #insta-section1{
-        flex-direction: column-reverse;
+        grid-template-rows: 40vh auto;
+        grid-template-columns: 100vw;
     }
 
-    body #insta-section1>div:nth-child(2){width: 100vw;}
-    body #insta-section1>div:nth-child(1){width:93vw;padding-left: 30px;}
+    body #insta-section1>div:nth-child(2){grid-row: 1}
+    body #insta-section1>div:nth-child(1){padding-left: 30px;overflow-y: scroll;overflow-x:hidden;}
     body #insta-section1>div:nth-child(2) .instaAssetsImg{
         display: block;
         margin:0 auto;
-        margin-top:50px;
-        margin-bottom: 50px;
-        width:80vw;
+        margin-top:1vh;
+        margin-bottom: 5vh;
+        width:60vw;
     }
 
     body #insta-section1>div:nth-child(1) .instaAdsImg{
@@ -49,9 +50,6 @@
         width:90%;
     }
 
-    body #insta-section1>div:nth-child(2) .instaAssetsImg{
-        width:80vw;
-    }
 
     body #insta-section1>div:nth-child(1)>span{
         font-size:4vw;

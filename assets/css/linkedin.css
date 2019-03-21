@@ -24,19 +24,20 @@
 }
 
 /*Mobile View*/
-@media screen and (max-width:750px){
+@media screen and (max-width:450px){
     body #li-section1{
-        flex-direction: column-reverse;
+        grid-template-rows: 40vh auto;
+        grid-template-columns: 100vw;
     }
 
-    body #li-section1>div:nth-child(2){width: 100vw;}
-    body #li-section1>div:nth-child(1){width:87vw;padding-left: 50px;}
+    body #li-section1>div:nth-child(2){grid-row:1}
+    body #li-section1>div:nth-child(1){padding-left: 30px;overflow-y: scroll;}
     body #li-section1>div:nth-child(2) .liAssetsImg{
         display: block;
         margin:0 auto;
-        margin-top:100px;
-        margin-bottom: 100px;
-        width:80vw;
+        margin-top:1vh;
+        margin-bottom: 5vh;
+        width:65vw;
     }
 
     body #li-section1>div:nth-child(1)>ul{
