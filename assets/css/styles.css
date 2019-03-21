@@ -200,6 +200,7 @@ body{
     width:8vw;
     float: left;
     margin-top: 160px;
+    position: relative;
 }
 
 #section1 .show>div:nth-child(3){ 
@@ -359,6 +360,7 @@ body{
     float: right;
     margin-top:-18vh;
     width:7vw;
+    position: relative;
 }
 
 #section3 .head1{
@@ -376,7 +378,7 @@ body{
     margin-bottom: 10px;
     height: 97px;
     display: flex;
-    width: 84vw;
+    width: 83.3vw;
     overflow-x:scroll;  
     padding-left:200px;
 }   
