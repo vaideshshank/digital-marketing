@@ -18,8 +18,8 @@ var pos=0,curr_scr=this.scrollLeft;
 $(document).ready(function(){
     var windowWidth=window.innerWidth,selector;
     //scroll variables
-    let iframeTop=$("#section3 .iframes").offset().top,
-        scrollDown=false,scrollUp=false;
+    let iframeTop=$("#section3 .iframes").offset().top;
+    let iframeBottom=$("#section3 .iframes").offset().bottom;
     var check=false;
     var scrollPos=[];
 
@@ -36,9 +36,10 @@ $(document).ready(function(){
         var s1=el.scrollLeft;
         el.scrollLeft-=delta;
         var diff=Math.floor(el.scrollLeft-s1);   
-        if((diff!=0 && pos!=6) || (diff!=0 && diff!=1 && diff!=2 && pos==6)){
+        console.log("Diff : "+diff)
+        if((diff!=0 && pos!=6) || (diff!=0 && diff!=1  && pos==6)){
             e.preventDefault();
-            console.log("prevented : "+pos)
+            //console.log("prevented : "+pos)
         }    
 
         if(!check){
@@ -82,11 +83,13 @@ $(document).ready(function(){
     
     var i=0;
     //Parallax effect
+    let  scrollDown=false,scrollUp=false;
 
     $(window).scroll(function(e){
 
         //parallax effect
         var scroll=$(this).scrollTop();
+        var scrollB=$(this).scrollTop()+iframeTop;
         //parallax1("#dots3",scroll);
 
         if((scroll+$(this).height())>$("#dots5").offset().top-4){
@@ -97,19 +100,19 @@ $(document).ready(function(){
             parallax1("#dots3",((scroll+$(this).height())-$("#dots3").offset().top-20));
         }
 
-        /*if(scroll>iframeTop-150 && !scrollDown){
-            $("html, body").animate({scrollTop:iframeTop},{
+        /*if(scroll>iframeTop-200 && !scrollDown){
+            $("html, body").animate({scrollTop:iframeTop+50},{
                 easing:'swing',
                 duration:1000,
                 complete:function(){scrollDown=!scrollDown;}
             });   
-        }else if(scroll>iframeTop-150 && !scrollUp){
+        }else if(scrollB>iframeTop-150 && !scrollUp){
             $("html, body").animate({scrollTop:iframeTop},{
                 easing:'swing',
                 duration:1000,
                 complete:function(){scrollUp=!scrollUp;}
             });  
-        }*/  
+        } */
     });
 
 
