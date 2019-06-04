@@ -13,16 +13,17 @@ function parallax1(el,scrollVal){
 }
 
 
-var pos=0,curr_scr=this.scrollLeft;
 
 $(document).ready(function(){
+    var pos=0,curr_scr=this.scrollLeft,insliderAnimation=false,scrollCount=0;
     var windowWidth=window.innerWidth,selector;
     //scroll variables
     let iframeTop=$("#section3 .iframes").offset().top;
     let iframeBottom=$("#section3 .iframes").offset().bottom;
     var check=false;
     var scrollPos=[];
-
+    var scrolled=false;
+    
     for(i=0; i<7; i++){
         scrollPos.push($("#section3 .iframes>section").eq(i).offset().left+10);
     }   
@@ -40,7 +41,7 @@ $(document).ready(function(){
         if((diff!=0 && pos!=6) || (diff!=0 && diff!=1  && pos==6)){
             e.preventDefault();
             //console.log("prevented : "+pos)
-        }    
+        }else{scrolled=false;insliderAnimation=false;}
 
         if(!check){
             check=true;
@@ -84,12 +85,12 @@ $(document).ready(function(){
     var i=0;
     //Parallax effect
     let  scrollDown=false,scrollUp=false;
-
     $(window).scroll(function(e){
 
         //parallax effect
         var scroll=$(this).scrollTop();
         var scrollB=$(this).scrollTop()+iframeTop;
+        
         //parallax1("#dots3",scroll);
 
         if((scroll+$(this).height())>$("#dots5").offset().top-4){
@@ -100,19 +101,27 @@ $(document).ready(function(){
             parallax1("#dots3",((scroll+$(this).height())-$("#dots3").offset().top-20));
         }
 
-        /*if(scroll>iframeTop-200 && !scrollDown){
-            $("html, body").animate({scrollTop:iframeTop+50},{
-                easing:'swing',
-                duration:1000,
-                complete:function(){scrollDown=!scrollDown;}
-            });   
-        }else if(scrollB>iframeTop-150 && !scrollUp){
-            $("html, body").animate({scrollTop:iframeTop},{
-                easing:'swing',
-                duration:1000,
-                complete:function(){scrollUp=!scrollUp;}
-            });  
-        } */
+        if(scroll>iframeTop-$(window).height() && pos!=6){
+            
+            scrollCount++;
+            if(!scrolled && !insliderAnimation && scrollCount==1){
+                $("html, body").animate({scrollTop:iframeTop-$(window).height()/2},{
+                    easing:'swing',
+                    duration:1000,
+                    complete:function(){scrolled=true;console.log('scrolled');insliderAnimation=true;}
+                });   
+            }
+        }else{
+            if(pos==6){scrollCount=0;}
+            insliderAnimation=false;
+        }
+        // else if(scrollB>iframeTop-150 && !scrollUp){
+        //     $("html, body").animate({scrollTop:iframeTop},{
+        //         easing:'swing',
+        //         duration:1000,
+        //         complete:function(){scrollUp=!scrollUp;}
+        //     });  
+        // }
     });
 
 
@@ -139,5 +148,16 @@ $(document).ready(function(){
             hidden=!hidden;
         }
     })
+
+    $(".flex5").slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        centreMode:true,
+        variableWidth:true,
+        nextArrow:$(".fa-arrow-right"),
+        prevArrow:$(".fa-arrow-left")
+    });
     
 })
