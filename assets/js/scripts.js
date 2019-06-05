@@ -14,7 +14,15 @@ function parallax1(el,scrollVal){
 
 
 
+
 $(document).ready(function(){
+
+    function scrollToFrame(){
+        $("body,html").animate({
+            scrollTop: $(selector).offset().top
+        },1000,"swing");
+    }
+    
     var pos=0,curr_scr=this.scrollLeft,insliderAnimation=false,scrollCount=0;
     var windowWidth=window.innerWidth,selector;
     //scroll variables
@@ -55,7 +63,7 @@ $(document).ready(function(){
             
             $(el).animate({scrollLeft:scrollPos[pos]-scrollPos[0]},{
                 easing:'swing',
-                duration:1500,
+                duration:500,
                 complete:function(){
                     check=false;
                 }
@@ -79,8 +87,65 @@ $(document).ready(function(){
     //Iframe slider animation
 
     $(selector).mousewheel(function(e,delta){
-        sliderAnimation(this,e,delta);
+        /*console.log(this);
+        sliderAnimation(this,e,delta);*/
+        //e.preventDefault();
+    });
+    
+    var stopShift=false;
+    // $("html").on("mousemove",".social-media",scrollToFrame);
+    $(".stopScroll").click(function(e){
+        stopShift=true;
+        $("html").off("mousemove","body .social-media");
+        var shift;
+        // if($(document).offset().top<iframeTop){shift=$(selector).offset().top;}
+        // else{shift=$(selector).offset().top-window.height;}
+        $("body, html").animate({
+            scrollTop: $(selector).offset().top
+        }, 1000,"swing");    
+        
     })
+
+    $(".stopScrollTop").click(function(e){
+        stopShift=true;
+        $("html").off("mousemove",".social-media")
+        // if($(document).offset().top<iframeTop){shift=$(selector).offset().top;}
+        // else{shift=$(selector).offset().top-window.height;}
+        $("body, html").animate({
+            scrollTop: $(selector).offset().top
+        }, 1000,"swing");    
+    
+    })
+    
+    $(".social-media .icons>img").click((function(e){
+        var index=$(".social-media .icons>img").index(this);
+        $(".social-media .icons>img").removeClass("currentFrame");
+        $(this).addClass("currentFrame")
+        $(selector).animate({scrollLeft:scrollPos[index]-scrollPos[0]},{
+            easing:'swing',
+            duration:800,
+            complete:function(){
+                check=false;
+            }
+        });   
+    }))
+
+    $("#section4>div:nth-child(2)>i").click(function(e){
+        var index=$("#section4>div:nth-child(2)>i").index(this);
+        $(selector).animate({
+            scrollLeft:scrollPos[index]-scrollPos[0]
+        },{
+            easing:'swing',
+            duration:800,
+            complete:function(){
+                check=false;
+            }
+        });
+        $("body,html").animate({
+            scrollTop: $(selector).offset().top
+        },1000,"swing");
+    })
+    
     
     var i=0;
     //Parallax effect
@@ -89,7 +154,7 @@ $(document).ready(function(){
 
         //parallax effect
         var scroll=$(this).scrollTop();
-        var scrollB=$(this).scrollTop()+iframeTop;
+        var scrollB=iframeTop-200;
         
         //parallax1("#dots3",scroll);
 
@@ -101,20 +166,14 @@ $(document).ready(function(){
             parallax1("#dots3",((scroll+$(this).height())-$("#dots3").offset().top-20));
         }
 
-        if(scroll>iframeTop-$(window).height() && pos!=6){
-            
-            scrollCount++;
-            if(!scrolled && !insliderAnimation && scrollCount==1){
-                $("html, body").animate({scrollTop:iframeTop-$(window).height()/2},{
-                    easing:'swing',
-                    duration:1000,
-                    complete:function(){scrolled=true;console.log('scrolled');insliderAnimation=true;}
-                });   
-            }
-        }else{
-            if(pos==6){scrollCount=0;}
-            insliderAnimation=false;
-        }
+        /*if(scroll>scrollB && scroll<scrollB+200 &&  !stopShift){
+            $("html, body").animate({scrollTop:$(selector).offset().top},{
+                easing:'swing',
+                duration:1000,
+                complete:function(){scrolled=true;console.log('scrolled');insliderAnimation=true;}
+            });   
+        }*/
+        
         // else if(scrollB>iframeTop-150 && !scrollUp){
         //     $("html, body").animate({scrollTop:iframeTop},{
         //         easing:'swing',

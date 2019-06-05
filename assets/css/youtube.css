@@ -66,7 +66,7 @@ body{margin:0; padding: 0;}
 
 #youtube-section1{
     display: grid;
-    grid-template-columns: 50vw 49.45vw;
+    grid-template-columns:  45vw 55vw;
 }
 
 #youtube-section1>div:nth-child(1){

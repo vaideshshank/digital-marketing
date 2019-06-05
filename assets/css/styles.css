@@ -294,6 +294,53 @@ body{
     margin-left:5vw;
 }
 
+@keyframes arrowAnime{
+    from{transform:translateY(0vh);}
+    to{transform:translateY(2vh);}
+}
+
+@keyframes arrowAnimeTop{
+    from{transform:translateY(38vh) rotate(180deg);}
+    to{transform:translateY(36vh) rotate(180deg);}
+}
+
+#section3 .stopScroll,#section3 .stopScrollTop{
+    filter:invert(100%);
+    width:2vw;
+    display:block;
+    margin:0 auto;
+    margin-top:-10vh;
+    animation-name: arrowAnime;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#section3 .stopScrollTop{
+    transform:translateY(36vh) rotate(180deg);
+    animation-name: arrowAnimeTop;
+    
+}
+
+#section3 .stopScroll:hover,#section3 .stopScrollTop{cursor:pointer;}
+
+#section2 .social-media{
+    display:flex;
+}
+
+
+
+#section2 .switches{
+    width: 10vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+#section2 .switches>img{
+    display: block;
+    width:5vw;
+}
+
 #section2 .flex3{    
     margin:0 auto;
     margin-top: 77px;
@@ -337,10 +384,32 @@ body{
     width:58vw;
 }
 
-#section3 .iframes{
-    margin-top:170px;
+#section3 .social-media{
     display:flex;
-    width:100%;;
+    margin-top:170px;
+}
+#section3 .icons{
+    display: flex;
+    min-width:5vw;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+#section3 .icons>img{
+    width: 2vw;
+    display:block;
+    padding:0.5vw;
+    border-radius:10px;
+    transition: box-shadow 0.3s;
+}
+#section3 .currentFrame{box-shadow: 0 0 8px 3px rgba(107, 106, 106, 0.911);}
+#section3 .icons>img:hover{
+    box-shadow: 0 0 8px 3px rgba(107, 106, 106, 0.911);
+    cursor: pointer;;
+}
+
+#section3 .iframes{
+    display:flex;
     overflow-y:scroll;
 }
 
@@ -517,6 +586,9 @@ body{
     letter-spacing:0.1vw;
 }
 
+.triangle{
+    width:30vw;
+}
 #section4{
     background: #151515;
     margin-top:18vw;
@@ -535,7 +607,7 @@ body{
 #section4>div:nth-child(2){
     display: flex;
     justify-content: space-between;
-    width:20vw;
+    width:25vw;
     margin:0 auto;
 }
 
