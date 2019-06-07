@@ -93,7 +93,23 @@ $(document).ready(function(){
     });
     
     var stopShift=false;
+    var currIndex=0,moving=false;
     // $("html").on("mousemove",".social-media",scrollToFrame);
+    $(".iframes").scroll(function(e){
+        if(moving){
+            return;
+        }
+        console.log($(this).scrollLeft()+scrollPos[0],scrollPos,currIndex)
+        if($(this).scrollLeft()>scrollPos[currIndex+1]*0.95){
+            currIndex++;
+            $(".social-media .icons>img").removeClass("currentFrame");
+            $(".social-media .icons>img").eq(currIndex).addClass("currentFrame");
+        }else if($(this).scrollLeft()<scrollPos[currIndex]*0.85 && currIndex!=0){
+            currIndex--;
+            $(".social-media .icons>img").removeClass("currentFrame");
+            $(".social-media .icons>img").eq(currIndex).addClass("currentFrame");
+        }
+    })
     $(".stopScroll").click(function(e){
         stopShift=true;
         $("html").off("mousemove","body .social-media");
@@ -117,15 +133,18 @@ $(document).ready(function(){
     
     })
     
+    
     $(".social-media .icons>img").click((function(e){
-        var index=$(".social-media .icons>img").index(this);
+        moving=true;
+        currIndex=$(".social-media .icons>img").index(this);
         $(".social-media .icons>img").removeClass("currentFrame");
         $(this).addClass("currentFrame")
-        $(selector).animate({scrollLeft:scrollPos[index]-scrollPos[0]},{
+        $(selector).animate({scrollLeft:scrollPos[currIndex]-scrollPos[0]},{
             easing:'swing',
             duration:800,
             complete:function(){
                 check=false;
+                moving=false;
             }
         });   
     }))
@@ -183,6 +202,21 @@ $(document).ready(function(){
         // }
     });
 
+    var mouseHeld;
+    $(".arrows>i").mousedown(function(){
+        var scrolled,shift,type;
+        if($(".arrows>i").index(this)==0){
+            shift=-25;type="scrollLeft";
+        }else{shift=25;type="scrollRight";}
+        mouseHeld=setInterval(function(){
+            scrolled=$(".flex5").scrollLeft();
+            $(".flex5").animate({
+                scrollLeft:scrolled+(shift)
+            },10)
+        },20)
+    }).mouseup(function(){
+        clearInterval(mouseHeld);
+    })
 
     var hidden=true;
     $("#navigation>i").click(function(){
@@ -208,15 +242,6 @@ $(document).ready(function(){
         }
     })
 
-    $(".flex5").slick({
-        dots: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        centreMode:true,
-        variableWidth:true,
-        nextArrow:$(".fa-arrow-right"),
-        prevArrow:$(".fa-arrow-left")
-    });
+    
     
 })
