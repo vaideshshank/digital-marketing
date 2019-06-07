@@ -104,7 +104,7 @@ $(document).ready(function(){
             currIndex++;
             $(".social-media .icons>img").removeClass("currentFrame");
             $(".social-media .icons>img").eq(currIndex).addClass("currentFrame");
-        }else if($(this).scrollLeft()<scrollPos[currIndex]*0.85 && currIndex!=0){
+        }else if($(this).scrollLeft()<scrollPos[currIndex]*0.83 && currIndex!=0){
             currIndex--;
             $(".social-media .icons>img").removeClass("currentFrame");
             $(".social-media .icons>img").eq(currIndex).addClass("currentFrame");
