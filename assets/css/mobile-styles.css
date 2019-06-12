@@ -3,22 +3,16 @@
     body #dots1{width:50vw;}
     body #dots2{width:22vw;position: relative;top:100px;}
     body #dots4{width:50vw;}
-    body #dots6,body #dots7{width:50vw;}
     body #dots6{
         position: relative;
-        top:-50px;
         margin-left:0;
+        width:45vw;top:5vh
     }
 
     body #dots7{
         position: relative;
-        top:-25vh;
-        right:-30vw;
-    }
-
-    body #slider{
-        position: relative;
-        top:-30vh;
+        right:-36vw;
+        width:45vw;top:0vh;
     }
 
     body #section1 .banner>span:nth-child(4){font-size:11vw;margin-top:-20vw;}
@@ -70,24 +64,22 @@
     }
     body #section3 .flex6>div>span:nth-child(3){
         width:43vw;
-        font-size:11px;
-        margin-left:7.2vw
+        font-size:3vw;
+        margin-left:7.2vw;margin-top:2.5vw
     }
     body #section3 .head2{
         width:80vw;
         font-size: 3.4vw;
-        margin-top:-45vh;
+        margin-top:-10vh;
     }
 
     body #section3 #slider{width:60vw;}
-
-    body #section4{margin-top:41vw;}
+    body #section4{margin:2px solid red;}
     body #section4>div:nth-child(1){
         font-size:2.4vw;letter-spacing:0.1vw;
         margin-bottom:5vw;
     }   
-
-
+    
     body #section4>div:nth-child(2){
         width:50vw;
         flex-wrap:wrap;margin-top:0;

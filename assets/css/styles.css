@@ -564,8 +564,8 @@ body{
     font-size: 1.15vw;
 }
 
-#dots6,#dots7{width:25vw;margin-top:140px;}
-#dots6{margin-left:15vw;}
+#dots6,#dots7{width:25vw;}
+#dots6{margin-left:15vw;margin-top:13vw}
 #dots7{
     position: relative;
     top:10vh;
@@ -585,7 +585,7 @@ body{
     color:white;
     text-align: center;
     margin:0 auto;
-    margin-top:-13vw;
+    margin-top:-5.5vw;
 }
 #section3 .head2>span{
     color:#23e5a3;
@@ -598,9 +598,9 @@ body{
 }
 #section4{
     background: #151515;
-    margin-top:18vw;
     padding-top:6.5vw;
     padding-bottom:5vw;
+    margin-top:10vw;
 }
 
 #section4>div:nth-child(1){
