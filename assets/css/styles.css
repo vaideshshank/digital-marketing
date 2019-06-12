@@ -9,6 +9,11 @@
 }
 
 @font-face{
+    font-family:'Poppins-ExtraLight';
+    src:url('../fonts/Poppins-ExtraLight.otf') format('opentype');
+}
+
+@font-face{
     font-family:'Poppins-Regular';
     src:url('../fonts/Poppins-Regular.otf') format('opentype');
 }
@@ -115,6 +120,7 @@ body{
     padding-left:4vw;
     padding-top:10vh;
     font-family:Poppins-Regular;
+    box-shadow:2px 0 5px #ffffff52;
 }
 
 #navigation .mobile-menu>span{
@@ -369,7 +375,7 @@ body{
 
 #section2 .flex3>div>span:nth-child(3){
     display:block;
-    font-family: Poppins-Regular;
+    font-family: Poppins-ExtraLight;
     color: rgba(255, 255, 255, 0.5);
     text-align:center;
     font-size: 1vw; 
@@ -415,7 +421,7 @@ body{
     overflow-y:scroll;
 }
 
-#section3 .iframes>section{height:100vh;width:100vw;}
+#section3 .iframes>section{height:auto;width:100vw;}
 
 #section3 .iframes::-webkit-scrollbar{
     display:none;
@@ -477,7 +483,6 @@ body{
 #section3 .flex5{
     margin-top:60px;
     margin-bottom: 10px;
-    height: 7vw;
     display: flex;
     width: 95vw;
     overflow-x:scroll;  
@@ -491,7 +496,7 @@ body{
 #section3 .flex5>div{
     display: flex;
     min-width:21.5vw;
-    background:#d8d8d841;
+    background:rgba(216, 216, 216, 0.3);
     color:white;
     font-family: Poppins-Medium;
     font-size: 1.1vw;    

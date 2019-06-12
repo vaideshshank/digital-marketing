@@ -99,7 +99,7 @@ $(document).ready(function(){
         if(moving){
             return;
         }
-        console.log($(this).scrollLeft()+scrollPos[0],scrollPos,currIndex)
+        //console.log($(this).scrollLeft()+scrollPos[0],scrollPos,currIndex)
         if($(this).scrollLeft()>scrollPos[currIndex+1]*0.95){
             currIndex++;
             $(".social-media .icons>img").removeClass("currentFrame");
