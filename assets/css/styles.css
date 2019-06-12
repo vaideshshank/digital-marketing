@@ -154,10 +154,10 @@ body{
 }
 
 #section1 .banner>img:nth-child(1){
+    position:relative;
     width:9.5vw;
-    position: relative;
-    left:-250px;
-    top:0.8vw;
+    top:2vw;
+    margin-left:-41vw
 }
 #section1 .banner>img:nth-child(5){
     width:15vw;
