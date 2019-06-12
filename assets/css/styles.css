@@ -306,8 +306,8 @@ body{
 }
 
 @keyframes arrowAnimeTop{
-    from{top:26vh;}
-    to{top:24vh;}
+    from{top:36vh;}
+    to{top:34vh;}
 }
 
 #section3 .stopScroll,#section3 .stopScrollTop{
@@ -326,16 +326,11 @@ body{
     animation-name: arrowAnimeTop;
     display:block;
     position:relative;
-    top:26vh;
+    top:36vh;
     transform:rotate(180deg);
-
 }
 
 #section3 .stopScroll:hover,#section3 .stopScrollTop:hover{cursor:pointer;}
-
-#section2 .social-media{
-    display:flex;
-}
 
 
 #section2 .switches{
@@ -394,7 +389,7 @@ body{
 
 #section3 .social-media{
     display:flex;
-    margin-top:170px;
+    margin-top:170px;height:100vh;
 }
 #section3 .icons{
     display: flex;
