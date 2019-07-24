@@ -65,7 +65,7 @@ body{margin:0; padding: 0;}
 #quora-section1{
 
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns:  42vw 52.5vw;
 }
 
 #quora-section1>div:nth-child(1){

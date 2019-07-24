@@ -59,7 +59,7 @@ body{margin:0; padding: 0;}
 
 #fb-section1{
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 42vw 52.5vw;
 }
 
 #fb-section1>div:nth-child(1){

@@ -9,6 +9,11 @@
 }
 
 @font-face{
+    font-family:'Poppins-ExtraLight';
+    src:url('../fonts/Poppins-ExtraLight.otf') format('opentype');
+}
+
+@font-face{
     font-family:'Poppins-Regular';
     src:url('../fonts/Poppins-Regular.otf') format('opentype');
 }
@@ -115,6 +120,7 @@ body{
     padding-left:4vw;
     padding-top:10vh;
     font-family:Poppins-Regular;
+    box-shadow:2px 0 5px #ffffff52;
 }
 
 #navigation .mobile-menu>span{
@@ -148,10 +154,10 @@ body{
 }
 
 #section1 .banner>img:nth-child(1){
+    position:relative;
     width:9.5vw;
-    position: relative;
-    left:-250px;
-    top:0.8vw;
+    top:2vw;
+    margin-left:-41vw
 }
 #section1 .banner>img:nth-child(5){
     width:15vw;
@@ -294,6 +300,50 @@ body{
     margin-left:5vw;
 }
 
+@keyframes arrowAnime{
+    from{transform:translateY(0vw);}
+    to{transform:translateY(2vh);}
+}
+
+@keyframes arrowAnimeTop{
+    from{top:36vh;}
+    to{top:34vh;}
+}
+
+#section3 .stopScroll,#section3 .stopScrollTop{
+    filter:invert(100%);
+    width:2vw;
+    display:block;
+    margin:0 auto;
+    margin-top:-10vh;
+    animation-name: arrowAnime;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#section3 .stopScrollTop{
+    animation-name: arrowAnimeTop;
+    display:block;
+    position:relative;
+    top:36vh;
+    transform:rotate(180deg);
+}
+
+#section3 .stopScroll:hover,#section3 .stopScrollTop:hover{cursor:pointer;}
+
+
+#section2 .switches{
+    width: 10vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+#section2 .switches>img{
+    display: block;
+    width:5vw;
+}
+
 #section2 .flex3{    
     margin:0 auto;
     margin-top: 77px;
@@ -320,7 +370,7 @@ body{
 
 #section2 .flex3>div>span:nth-child(3){
     display:block;
-    font-family: Poppins-Regular;
+    font-family: Poppins-ExtraLight;
     color: rgba(255, 255, 255, 0.5);
     text-align:center;
     font-size: 1vw; 
@@ -337,14 +387,36 @@ body{
     width:58vw;
 }
 
-#section3 .iframes{
-    margin-top:170px;
+#section3 .social-media{
     display:flex;
-    width:100%;;
+    margin-top:170px;height:100vh;
+}
+#section3 .icons{
+    display: flex;
+    min-width:5vw;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+#section3 .icons>img{
+    width: 2vw;
+    display:block;
+    padding:0.5vw;
+    border-radius:10px;
+    transition: box-shadow 0.3s;
+}
+#section3 .currentFrame{box-shadow: 0 0 7px 4px #23e5a3;}
+#section3 .icons>img:hover{
+    box-shadow: 0 0 8px 3px #23e5a49c;
+    cursor: pointer;;
+}
+
+#section3 .iframes{
+    display:flex;
     overflow-y:scroll;
 }
 
-#section3 .iframes>section{height:100vh;width:100vw;}
+#section3 .iframes>section{height:auto;width:100vw;}
 
 #section3 .iframes::-webkit-scrollbar{
     display:none;
@@ -406,11 +478,10 @@ body{
 #section3 .flex5{
     margin-top:60px;
     margin-bottom: 10px;
-    height: 7vw;
     display: flex;
     width: 95vw;
     overflow-x:scroll;  
-    padding-left:8vw;
+    padding-left:4vw;
 }   
 
 #section3 .flex5::-webkit-scrollbar{
@@ -420,7 +491,7 @@ body{
 #section3 .flex5>div{
     display: flex;
     min-width:21.5vw;
-    background:#d8d8d841;
+    background:rgba(216, 216, 216, 0.3);
     color:white;
     font-family: Poppins-Medium;
     font-size: 1.1vw;    
@@ -488,8 +559,8 @@ body{
     font-size: 1.15vw;
 }
 
-#dots6,#dots7{width:25vw;margin-top:140px;}
-#dots6{margin-left:15vw;}
+#dots6,#dots7{width:25vw;}
+#dots6{margin-left:15vw;margin-top:13vw}
 #dots7{
     position: relative;
     top:10vh;
@@ -509,7 +580,7 @@ body{
     color:white;
     text-align: center;
     margin:0 auto;
-    margin-top:-13vw;
+    margin-top:-5.5vw;
 }
 #section3 .head2>span{
     color:#23e5a3;
@@ -517,11 +588,14 @@ body{
     letter-spacing:0.1vw;
 }
 
+.triangle{
+    width:30vw;
+}
 #section4{
     background: #151515;
-    margin-top:18vw;
     padding-top:6.5vw;
     padding-bottom:5vw;
+    margin-top:10vw;
 }
 
 #section4>div:nth-child(1){
@@ -535,7 +609,7 @@ body{
 #section4>div:nth-child(2){
     display: flex;
     justify-content: space-between;
-    width:20vw;
+    width:25vw;
     margin:0 auto;
 }
 
